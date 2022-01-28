@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width:300px;}
+        div{width:300px ; height: 200px;
+        animation: imgtran 1s alternate infinite ease-in-out;
+            
+        }
+        @keyframes imgtran {
+           from{
+               transform: translatex(0);
+           } 
+           to{
+               transform: translateX(300px);
+
+           }
+        }
+        .d02{
+            width:300px; height: 300px;
+            border:2px solid black;
+            overflow: hidden;
+        }
+        
+        #back01{
+            width:300px ; height: 300px;
+             
+        }
+        #img01{width:500px;
+            transition-property: all;
+            transition-duration: 1s;}
+
+        #img01:hover{
+            width:600px
+                    }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="d02">
+        <img id ="img01" src="../images/bts.jpg">
+      
+    </div>
+
+    <div class="d01">
+        <img src="../images/123.jpg">
+    </div>
+</body>
+</html>

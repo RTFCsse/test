@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+           
+            $(".li").on("click",function(){
+                $(".li").css("color","red")
+                .css("font-size","20px")
+            });
+       
+       
+        
+       
+       
+        $(function(){
+            $("#li02").on("click",function(){
+                $("#li02").css("color","blue")
+            });
+
+
+        
+    </script>
+    <style>
+         h1{color:red; font-size:20px;} 
+        #p01{color: blue; font-size:15px;}
+        .c01{border:1px solid black; width: 300px; height: 200px;}
+    
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>네이버</li>
+        <li id="li02">다음</li>
+        <li>네이트</li>
+        <li>구글</li>
+    </ul>
+
+    <ul>
+        <li class="li">네이버</li>
+        <li id="li02">다음</li>
+        <li class="li">네이트</li>
+        <li>구글</li>
+    </ul>
+
+    <button>색변경</button>
+   
+</body>
+</html>

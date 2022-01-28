@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function login_chaeck() {
+            var u_id = document.getElementById("id").vaule;
+            var u_pw = documen.getElementById("pw").value;
+            if(u_id =="admin" ) {
+                if(u+pw =="1234") {
+                    alert("로그인 성공");
+                    frm.submit();
+                } else{
+                    alert("패스워드가 일치하지 않습니다.");
+                    document.getElementById("pw").value="";
+                    document.getElementById("pw").focus();
+                }
+                }
+                else {
+                    alret("아이디가 존재하지 않습니다. 다시 입력해주세요:");
+                    document
+                }
+
+                
+
+
+    </script>
+</head>
+
+<body>
+    <form action="login_check.html" method="get">
+            <label>아이디</label>
+            <input type="text" name="userid" id="id"><br>
+            <label>패스워드</label>
+            <input type="password" name="userpw" id="pw"><br>
+            <input type="button" onclick="login_chaeck()" value="로그인">
+            
+
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {margin:0; padding:0;}
+    .accordion {position:absolute;top:30%;left:50%;transform:translateX(-50%);width:500px;}
+    input[id*="answer"] {display:none;}
+    input[id*="answer"] + label {display:block;padding:20px;border:1px solid #232188;border-bottom:0;color:#fff;font-weight:900;background:#3634a5;cursor:pointer;position:relative;}
+    input[id*="answer"] + label em {position:absolute;top:50%;right:10px;width:30px;height:30px;margin-top:-15px;display:inline-block;background:url('./img/arrow.png') 0 0 no-repeat;}
+    input[id*="answer"] + label + div {max-height:0;transition: all .35s;overflow:hidden;background:#ebf8ff;font-size:11px;}
+    input[id*="answer"] + label + div p {display:inline-block;padding:20px;}
+    input[id*="answer"]:checked + label + div {max-height:100px;}
+    input[id*="answer"]:checked + label em {background-position:0 -30px;}
+    </style>
+<body>
+    <div class="accordion">
+        <input type="radio" name="accordion" id="answer01">
+            <label for="answer01">코로나바이러스감염증-19는 어떤 질병인가요?<em></em></label>
+            <div><p>코로나바이러스감염증-19(코로나19)는 과거에 발견되지 않았던 새로운 코로나 바이러스인 SARS-CoV-2에 의해 발생하는 호흡기 감염병입니다. 이 바이러스에 감염되면 무증상부터 중증에 이르기까지 다양한 임상증상이 나타날 수 있습니다.</p></div>
+            <input type="radio" name="accordion" id="answer02">
+            <label for="answer02">코로나바이러스감염증-19는 어떤 질병인가요?<em></em></label>
+            <div><p>코로나바이러스감염증-19(코로나19)는 과거에 발견되지 않았던 새로운 코로나 바이러스인 SARS-CoV-2에 의해 발생하는 호흡기 감염병입니다. 이 바이러스에 감염되면 무증상부터 중증에 이르기까지 다양한 임상증상이 나타날 수 있습니다.</p></div>
+            <input type="radio" name="accordion" id="answer03">
+            <label for="answer03">코로나바이러스감염증-19는 어떤 질병인가요?<em></em></label>
+            <div><p>코로나바이러스감염증-19(코로나19)는 과거에 발견되지 않았던 새로운 코로나 바이러스인 SARS-CoV-2에 의해 발생하는 호흡기 감염병입니다. 이 바이러스에 감염되면 무증상부터 중증에 이르기까지 다양한 임상증상이 나타날 수 있습니다.</p></div>
+            <input type="radio" name="accordion" id="answer04">
+            <label for="answer04">코로나바이러스감염증-19는 어떤 질병인가요?<em></em></label>
+            <div><p>코로나바이러스감염증-19(코로나19)는 과거에 발견되지 않았던 새로운 코로나 바이러스인 SARS-CoV-2에 의해 발생하는 호흡기 감염병입니다. 이 바이러스에 감염되면 무증상부터 중증에 이르기까지 다양한 임상증상이 나타날 수 있습니다.</p></div>
+        </div>
+</body>
+</html>

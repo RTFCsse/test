@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width:300px}
+        .d01{width:300px ; height: 300px;
+            animation: imgrotate 1s infinite alternate, ease-in,
+            imgscale 3s  alternate ease-in;   }
+
+        @keyframes imgrotate{
+            from{
+                transform: perspective(180px) rotate(0deg);
+                transform: scale(1);
+
+            }
+            50%{
+                transform:perspective(100px)  rotateX(0deg);
+                transform:scale(1.5);
+            }
+
+            to{
+                transform: perspective(100px) rotatex(180deg);
+                transform:scalex(1.2);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d01">
+        <img src="../images/자동차.png">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            var data_html=""
+            for(i=1901;i<2022;i++){
+                data_html += "<option value="+i+">" +i+"년</option>";
+            }
+            $("#year").html(data_html);
+
+            data_html=""
+            for(i=1;i<12;i++){
+                data_html += "<option value="+i+">" +i+"년</option>";
+            }
+            $("#month").html(data_html);
+
+            let count=1;
+            $("#month").change(function(){
+                $(".txt").text($(this).val()+"월을 선택하셨습니다.");
+                count +=1;
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--1901~2022-->
+    <select id="year">
+        <option value="1901">1901년</option>
+        <option value="1902">1902년</option>
+        <option value="1903">1903년</option>
+        <option value="1904">1904년</option>
+    </select>
+    <select id="month">
+        <option value="1">1월</option>
+        <option value="2">2월</option>
+</body>
+</html>

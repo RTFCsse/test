@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> table,th,td{border: 1px solid black; border-collapse: collapse;}
+        th{width:80px;}
+
+    </style>
+
+
+</head>
+    
+<body>
+    <form>
+        <input type="button" onclick="login_chaeck(cal)" value="출력">
+
+
+    </form>
+
+
+  
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+            <th>합계</th>
+            <th>평균</th>
+
+        </tr>
+        <tr>
+            <th id=name></th>
+            <th id=kor></th>
+            <th id=eng></th>
+            <th id=math></th>
+            <th id=sum></th>
+            <th id=avg></th>
+        </tr>
+
+    </table>
+    
+    <script>
+        function cal() {
+            
+            var cal2=[]
+                cal2=document.getElementById("kor").value;
+                cal2=document.getElementById("eng").value;
+                cal2=document.getElementById("math").value;
+
+            var cal2Arr = cal2.map(Number);
+            
+            cal1Arravg=(cal2Arr/3);
+            callArrhap=Sum(cal2Arr);
+            
+            document.write(callArrhap);
+            
+        }
+        
+
+
+
+
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>

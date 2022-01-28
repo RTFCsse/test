@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+        <form action="http://www.naver.com" method="get">
+        <label>ID </label><br>
+        <input type="text" name="id" id="id"><br>
+        <label>패스워드</label><br>
+        <input type="password" name="passsword" id="passsword"><br>
+        <input type="button"  onclick ="idCheck" value="확인">
+
+    </form>
+
+
+<script>
+        //input id passsword
+        // id admin && pw=1111 , 
+        // 로그인 성공 ,로그인 실패 다시 입력 focus id
+        //oracle db에서 userid,userpw 비교
+        function idCheck(){
+            var id = document.getElementById("id").value;
+            var password =document.getElementById("password").value;
+            
+            if(id=="admin"&password=="1111") {
+                 alert("로그인")
+                 documnet.frm.submit;
+        //  location.href="http://www.naver.com";  //페이지 링크
+        }
+        else {alert("로그인실패");
+            document.getElementById("id").focus();
+            return false;
+      
+    
+
+
+
+        }
+       
+       
+    //     var id =prompt("아이디 입력:");
+    //    var password =prompt("패스워드 입력:");
+           
+
+    
+    
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label>당신의 나이를 입력하세요.</label><br>
+        <input type="text" name="age" id="age"><br>
+        <button type="button" onclick="checkAge()">확인</button>
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    <script>
+
+        function checkAge(){
+            var age= document.getElementById("age").value;
+            {
+                alert("if(age=="")데이터가 입력되지 않았습니다. 입력해주세요");
+                document.getElementById("age").focus();
+                return false;
+            };
+            var result= age>=20? "성인":"미성년자";
+            document.write(result);
+            
+        };
+
+//     var age = prompt("나이를 입력하세요","0");
+//     var check = age>=20? "성인" :"미성년자";
+//     document.write(check,"<br>");
+//  -->
+
+
+        
+    
+    
+    
+    
+    
+    // var a=prompt("당신의 나이는 몇살 인가요?")
+        // var b=20;
+        // var c=a>=b? "성인" :"미성년자";
+        // document.write(c)
+      
+
+        //age>=2
+
+
+    </script>
+    
+</body>
+</html>

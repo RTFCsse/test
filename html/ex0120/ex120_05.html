@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        table,tr,td{border: 1px solid black; border-collapse: collapse;text-align: center;}
+    </style>
+
+   
+    
+
+
+
+<body>
+    <form action="" method="post">
+        <input type="text" name="num1" id="num1"><br>
+        <button type="button" onclick="cal()">계산</button><br>
+
+    </form>
+
+    <br>
+    
+    
+    
+    <table>
+        <colgroup>
+            <col width="100px">
+            <col width="100px">
+        </colgroup>
+        
+        <!-- innerHtml 넣을것 -->
+        <tbody id="dataIn">
+            <tr>
+                <td>최대값</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>최소값</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>오름차순</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>내림차순</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script>
+        
+        function cal()
+       
+        var strArr =document.getElementById("num1").value;
+        var numArr = str.split(",").map(Number);
+        //문자를 숫자형태로 잘라서 배열에 저장시켜줌.
+        
+        var numArr2=[];
+ 
+        for(var i=0;i<strArr.length;i++){
+            numArr2[i] = Number(numArr[i]);
+        }
+        
+        documnet.write(numArr2);
+
+
+
+
+       
+        // 최대값, 최소값, 순차정렬, 역순정렬
+        document.write(strArr.sort(),"<br>");
+        document.write("최대값 : ",Math.max(numArr[0],numArr[1],numArr[2],numArr[3],numArr[4]),"<br>");
+        Math.max(numArr[0],numArr[1],numArr[2],numArr[3],numArr[4]);
+        Math.max.apply(null,numArr2);
+        document.write(" numArr2 최대값 : ",Math.max.apply(null,numArr2),"<br>");
+
+
+
+    </script>
+        
+    </body>
+    </html>
+
+
+    
+</body>
+</html>
